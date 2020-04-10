@@ -22,6 +22,13 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    - name: Set version tag image
+      run: |
+        echo ::set-env name=docker-tag::$(git log -1 | grep commit | cut -c8-17) 
+    
+    - name: Validate version tag 
+      run: echo $docker-tag
+
     # Runs a single command using the runners shell
     - name: Install dependencies
       run: npm install 

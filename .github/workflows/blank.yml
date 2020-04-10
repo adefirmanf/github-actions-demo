@@ -38,6 +38,6 @@ jobs:
       run: npm run test
 
     - name: Docker build 
-      uses:  actions/docker/cli@master
+      uses: docker
       with: 
         args: build -t docker.pkg.github.com/adefirmanf/github-actions-demo/app:${{env.dockertag}} .

@@ -40,4 +40,4 @@ jobs:
     - name: Docker build 
       uses:  actions/docker/cli@master
       with: 
-        args: build -t docker.pkg.github.com/adefirmanf/github-actions-demo/app:${{dockertag}}
+        args: build -t docker.pkg.github.com/adefirmanf/github-actions-demo/app:${{env.dockertag}} .

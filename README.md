@@ -1,0 +1,1 @@
+![CI](https://github.com/adefirmanf/github-actions-demo/workflows/CI/badge.svg?branch=master)

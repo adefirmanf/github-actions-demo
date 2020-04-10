@@ -1,0 +1,27 @@
+{
+  "name": "github-actions-demo",
+  "version": "1.0.0",
+  "description": "![CI](https://github.com/adefirmanf/github-actions-demo/workflows/CI/badge.svg?branch=master)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adefirmanf/github-actions-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adefirmanf/github-actions-demo/issues"
+  },
+  "homepage": "https://github.com/adefirmanf/github-actions-demo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.1",
+    "supertest": "^4.0.2"
+  }
+}
